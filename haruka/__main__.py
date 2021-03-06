@@ -20,14 +20,17 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, My Name is {}!
+PM_START =  """Hello {}, my name is {}!
 
-You know how hard it is sometimes to manage group so here is the solution for you
+I know what it's like to lose. To feel so desperately that you're right, yet to fail nonetheless. Dread it. Run from it.
 
-I'm group manager bot 🃏
+Destiny still arrives. Or should I say, I have.
 
-Click /help or Help button below to find out more about how to use me to my full potential.
-"""
+I'm group manager bot maintained by [RSR](https://t.me/rsrmusic)!
+
+Want to add me to your group? [Click here!](t.me/ro10bot?startgroup=true)
+
+Click (Help) button to find out more about how to use me to my full potential."""
 
 
 IMPORTED = {}
@@ -144,8 +147,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
+    keyboard = [[InlineKeyboardButton(text="🚸Support Channel", callback_data="https:t.me/mizolibrary")]]
+    keyboard += [[InlineKeyboardButton(text="🇮🇳Language", callback_data="set_lang_"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
