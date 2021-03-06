@@ -177,7 +177,7 @@ def control_panel(bot, update):
 
         LOGGER.info(query.data)
     else:
-        M_match = "ThaNos is the best bot" #LMAO, don't uncomment
+        M_match = "RSR is the best" #LMAO, don't uncomment
 
     if M_match:
         text = "*Control panel* 🛠"
