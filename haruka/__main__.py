@@ -26,7 +26,7 @@ I know what it's like to lose. To feel so desperately that you're right, yet to 
 
 Destiny still arrives. Or should I say, I have.
 
-I'm group manager bot maintained by [RSR](https://t.me/rsrmusic)!
+I'm group manager Bot
 
 Want to add me to your group? [Click here!](t.me/ro10bot?startgroup=true)
 
